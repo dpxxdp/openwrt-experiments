@@ -16,3 +16,12 @@ Make sure you do this while connected via ethernet **NOT** wifi.
 1. In the OpenWRT browser interface, go to Network > Wifi.
 2. The TL N600 router has two radios, broadcasting at 2.4Ghz and 5Ghz.
 3. Click "Add" to add a network interface under each radio frequency.  Set the SSID (the name of your wireless network) and under Wireless Security set a secure WPA2-PSK password with a cipher of "auto".
+
+#Adding a Hard Drive
+Install fdisk and kmod-fs-ext4 onto your router:
+
+```
+opkg update
+opkg install fdisk kmod-fs-ext4 
+Add 
+http://apple.stackexchange.com/questions/171506/formatting-usb-disk-as-ext3-on-mac
